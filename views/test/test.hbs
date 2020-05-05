@@ -1,0 +1,74 @@
+{{#extend 'headfiles'}}
+    <link rel="stylesheet" type="text/css" href="stylesheets/commonStyle.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/BL.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/partial.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/canvas.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/cardStyle.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/lockAndKey.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/test/calculator.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   ></script>
+    <script src="javascripts/test/test.js"></script>
+    <!--<script src="javascripts/test/live2dMessage.js"></script>-->
+{{/extend}}
+
+
+{{#>card}}
+    {{#*inline 'cardClassName'}}partial{{/inline}}
+    {{#*inline 'titleClassName'}}partial_title{{/inline}}
+    {{#*inline 'title'}}Partial{{/inline}}
+    {{#*inline 'optionsClassName'}}partial_options{{/inline}}
+    {{#*inline 'optionsContent'}}
+        <span class="main_options_button">off</span><span class="main_options_button">on</span>
+    {{/inline}}
+    {{#*inline 'boxClassName'}}partial_box{{/inline}}
+    {{#*inline 'boxContext'}}
+        <div class="partial_box_content">
+            <p>Partials搭配CSS和JS创建类是可以的，options的开关也可以实现按输入自动生成，但是这个设计暂时看不到任何价值，我决定中止这个尝试。</p>
+        </div>
+    {{/inline}}
+{{/card}}
+
+<canvas class="test_canvas"></canvas>
+
+<div class="main myClass_card">
+    <div class="main_title myClass_card_title">
+        <span>User</span>
+    </div>
+    <div class="main_options myClass_card_options">
+        <span class="main_options_button universe_card_options_button">Status</span><span class="main_options_button universe_card_options_button">Data</span>
+    </div>
+    <div class="main_box myClass_card_box">
+        <div class="main_box_status">
+            <div class="main_box_status_headPortrait">
+                <img src="#">
+            </div>
+            <div class="main_box_status_Info">
+                <span class="main_box_status_Info_id">ID:</span><br>
+                <span class="main_box_status_Info_name">Name:</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="large_box">
+    <div class="small_box" style="content: 'KKK';background: red">
+        ppx
+        <h1>PPP</h1>
+    </div>
+    <div class="small_box">
+        pps
+    </div>
+</div>
+
+
+<div class="lockAndKey" oncontextmenu = "return false" onselectstart="return false">
+    <div class="lockAndKey_choices"><span>Caesar Cipher</span><span>Hill Cipher</span><span>substitution Cipher</span><span>playFire Cipher</span></div>
+    <input type="text" name="lockedWords" placeholder="locked words enter here">
+    <input type="text" name="words" placeholder="words to lock">
+    <span class="ppx"><span>lock</span><span>unlock</span></span>
+</div>
+
+<div class="calculator"  oncontextmenu = "return false" onselectstart="return false">
+    <div><input type="text" name="calculator_mod"><span>取模简化</span></div>
+    <div><input type="text" name="calculator_multiply"><span>乘法逆元</span></div>
+</div>

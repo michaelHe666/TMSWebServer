@@ -1,0 +1,32 @@
+{{#extend 'cssFiles'}}
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/partials/cards/messages.css">
+{{/extend}}
+{{#extend 'scripts'}}
+    <script src="http://localhost:3000/javascripts/partials/cards/messages.js"></script>
+{{/extend}}
+<div class="messages myClass_card">
+    <span class="messages_title myClass_card_title"><span>Messages</span></span>
+    <div class="messages_options myClass_card_options">
+        <span class="messages_options_button universe_card_options_button">System</span><span class="messages_options_button universe_card_options_button">Private</span>
+    </div>
+    <div class="messages_box myClass_card_box">
+        <div class="messages_box_private">
+            <span >
+                <span>[unread]</span><span>[2018/8/1]</span><span>[michael]</span>
+            </span>
+            <span ><span>back</span><span>more</span><span>next</span></span>
+        </div>
+        <div class="messages_box_system">
+            <span >
+                <span>[unread]</span><span>[2018/8/1]</span><span>hello world</span>
+            </span>
+            <span ><span>back</span><span>more</span><span>next</span></span>
+        </div>
+        <div class="messages_box_settings">
+            <span >
+                <span>[unread]</span><span>[2018/8/1]</span><span>hello world</span>
+            </span>
+            <span ><span>back</span><span>more</span><span>next</span></span>
+        </div>
+    </div>
+</div>

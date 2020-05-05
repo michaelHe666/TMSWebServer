@@ -1,0 +1,238 @@
+.lock{
+    box-shadow: 0 0 1rem 0 #dbdbdb;
+}
+
+.lock:focus-within{
+    animation: lockBreath 2000ms ease-in-out infinite alternate;
+}
+
+@keyframes lockBreath {
+    0%{
+        box-shadow: 0 0 1rem 0 #dbdbdb;
+    }
+    100%{
+        box-shadow: 0 0 6rem 0 #dbdbdb;
+    }
+}
+
+.lock_options{
+    display: block;
+    position: relative;
+    height: 3.5rem;
+    width: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lock_options_button{
+    display: inline-block;
+    float: left;
+    height: 3.5rem;
+    width: 8rem;
+    color: #808080;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Comic Sans MS", sans-serif;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.lock_options_button:nth-child(1){
+    background: #808080;
+    color: #ffffff;
+}
+
+.lock_box{
+    background: #ededed;
+    font-family: "Comic Sans MS",sans-serif;
+}
+
+.lock_box_login{
+    display: flex;
+}
+
+.lock_box_register{
+    display: none;
+}
+
+.lock_box_login,.lock_box_register{
+    position: absolute;
+    padding: 3rem;
+    width: 44rem;
+    height: 24rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lock_box_login>span,.lock_box_register>span{
+    display: flex;
+    height: 3rem;
+    width: 30rem;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 4rem;
+    color: #808080;
+}
+
+.lock_box_register>p{
+    display: block;
+    height: 3rem;
+    width: 30rem;
+    position: relative;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #8e8e8e;
+}
+
+/*here starts input logos*/
+
+/*here comes login&register username*/
+.lock_box_login>span:nth-child(1)>span:nth-child(1),.lock_box_register>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: relative;
+    top: 0.2rem;
+    width: 0;
+    height: 0;
+    border-left: 0.9rem solid transparent;
+    border-right: 0.9rem solid transparent;
+    border-bottom: 2rem solid #808080;
+}
+
+.lock_box_login>span:nth-child(1)>span:nth-child(1)::before,.lock_box_register>span:nth-child(1)>span:nth-child(1)::before{
+    content: '';
+    display: block;
+    position: relative;
+    top: -0.2rem;
+    left: -0.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #808080;
+}
+/*username logo finished*/
+
+/*here comes password logos*/
+.lock_box_login>span:nth-child(2)>span:nth-child(1),.lock_box_register>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: relative;
+    top: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: solid 0.2rem #808080;
+    background: none;
+}
+
+.lock_box_login>span:nth-child(2)>span:nth-child(1)::after,.lock_box_register>span:nth-child(2)>span:nth-child(1)::after{
+    content: '';
+    display: block;
+    position: relative;
+    top:0.5rem;
+    left:0.45rem;
+    width: 0.7rem;
+    height: 0.2rem;
+    border-top: solid 0.2rem #808080;
+    border-bottom: solid 0.2rem #808080;
+    background: none;
+}
+
+.lock_box_login>span:nth-child(2)>span:nth-child(1)::before,.lock_box_register>span:nth-child(2)>span:nth-child(1):before{
+    content: '';
+    display: block;
+    position: relative;
+    top:1.3rem;
+    left:0.45rem;
+    width: 0.2rem;
+    height: 1rem;
+    background: #808080;
+}
+
+/*password logos finished*/
+
+/*here comes e-mail logo for register*/
+
+.lock_box_register>span:nth-child(3)>span:nth-child(1){
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 1.5rem;
+    background: #a5a5a5;
+}
+
+.lock_box_register>span:nth-child(3)>span:nth-child(1)::before{
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: solid 0.8rem #808080;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+}
+
+/*e-mail logo finished*/
+
+/*all logos finished*/
+
+.lock_box_login>span>input,.lock_box_register>span>input{
+    height: 3rem;
+    width: 25rem;
+    border: 0.2rem solid #e7e7e7;
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: "Comic Sans MS",sans-serif;
+    text-indent: 0.5rem;
+}
+
+.lock_box_login>span>input::placeholder,.lock_box_register>span>input::placeholder{
+    color: #c6c6c6;
+}
+
+.lock_box_login>span>input:focus,.lock_box_register>span>input:focus{
+    animation: inputBreath 1600ms ease-in-out infinite alternate;
+}
+
+@keyframes inputBreath {
+    0%{
+        border-color: #e7e7e7;
+    }
+    100%{
+        border-color: #999999;
+    }
+}
+
+.lock_box_login>button,.lock_box_register>button{
+    display: block;
+    position: relative;
+    top: 1rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    font-family: "Comic Sans MS",sans-serif;
+    color: #ffffff;
+    background: #a7a7a7;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.lock_box_login>button:hover,.lock_box_register>button:hover{
+    background: #808080;
+    color: #ffffff;
+    transition: color 500ms ease,background-color 500ms ease;
+}
+
+a:link,a:visited{
+    color: #808080;
+}
+
+a:hover,a:active{
+    color: #d1ca56;
+}

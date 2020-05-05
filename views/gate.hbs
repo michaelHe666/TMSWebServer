@@ -1,0 +1,38 @@
+{{#extend 'headfiles'}}
+    <link href=‘http://fonts.googleapis.com/css?family=Merienda+One’ rel=‘stylesheet’ type=‘text/css’>
+    <link rel="stylesheet" type="text/css" href="stylesheets/commonStyle.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/myClass/card.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/gate/BlockLocation.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/gate/lock.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/gate/footer.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="javascripts/gate/BL.js"></script>
+    <script src="javascripts/myClass/card.js"></script>
+    <script src="javascripts/gate/lock.js"></script>
+    <script src="javascripts/gate/footer.js"></script>
+{{/extend}}
+<div class="lock myClass_card">
+    <div class="lock_options">
+        <span class="lock_options_button">Sign in</span><span class="lock_options_button">Sign up</span>
+    </div>
+    <div class="lock_box myClass_card_box">
+        <div class="lock_box_login">
+            <span><span></span><input type="text" id="login_username" autocomplete="off" placeholder="please enter your username" onselectstart=""></span>
+            <span><span></span><input type="password" id="login_password" autocomplete="off" placeholder="please enter your password" onselectstart=""></span>
+            <button type="submit" id="login_submit">Submit</button>
+        </div>
+        <div class="lock_box_register">
+            <span><span></span><input type="text" id="register_username"  autocomplete="off" placeholder="username in [1,20] chars" onselectstart=""></span>
+            <span><span></span><input type="text" id="register_password"  autocomplete="off" placeholder="password in [8,20] chars" onselectstart=""></span>
+            <span><span></span><input type="email" id="register_passwordConfirm"  autocomplete="off" placeholder="your e-mail" onselectstart=""></span>
+            <p><input type="checkbox" id="register_agreement"><span>I have read<a href="#">《User Agreement》</a> and I agree with it.</span></p>
+            <button type="submit" id="register_submit">Submit</button>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <span>@2018-2028 mTown.Ltd. All rights reserved.</span>
+    <span><span>Minimize</span><span>Hide</span></span>
+    <span>Maximum</span>
+</div>

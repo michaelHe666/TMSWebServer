@@ -1,0 +1,142 @@
+.mTown_places{
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    /*border: solid 1px red;*/
+}
+
+/*here starts places logos*/
+
+/*here comes title logo*/
+.mTown_places>span:nth-child(1){
+    display: block;
+    position: relative;
+    top: -8rem;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0;
+    background-color: #a8a791;
+    text-indent: 12rem;
+    font-family: "Comic Sans MS",sans-serif;
+    line-height: 10rem;
+    font-size: 2.2rem;
+    color: #ffffff;
+    cursor: default;
+    box-shadow: 0 0 0.6rem 0 #a8a791;
+}
+
+.mTown_places>span:nth-child(1)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -4rem;
+    border-radius: 0;
+    background: none;
+    border-right:solid 4rem #a8a791;
+    border-top: solid 5rem transparent;
+    border-bottom: solid 5rem transparent;
+    filter: drop-shadow(0 0 0.2rem #a8a791);
+}
+
+.mTown_places>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: -1rem;
+    top:1rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: solid 0.2rem #f3f3f3;
+    background: none;
+}
+
+/*title logos finished*/
+
+/*here comes rest logos*/
+
+.mTown_places>span~span{
+    display: block;
+    position: relative;
+    width: 20rem;
+    height: 8rem;
+    border-radius: 4rem 0 0 4rem/4rem 0 0 4rem;
+    background-color: #CBCAB4;
+    text-indent: 9rem;
+    font-family: "Comic Sans MS",sans-serif;
+    line-height: 8rem;
+    font-size: 2rem;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+.mTown_places>span~span:hover{
+    text-indent: 11rem !important;
+    width: 24rem !important;
+    background-color: #a8a791 !important;
+    color: #ffffff !important;
+    transition: width 500ms ease,background-color 500ms ease,text-indent 500ms ease,color 500ms ease !important;
+    box-shadow: 0 0 0.4rem #a8a791 !important;
+}
+
+.mTown_places>span~span>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top:1rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: solid 0.3rem #f3f3f3;
+    background: none;
+    overflow: hidden;
+}
+
+/*here starts home logo*/
+.mTown_places>span:nth-child(2)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left:2.15rem;
+    top: 0.5rem;
+    border-bottom: solid 1rem #f3f3f3;
+    border-left: solid 0.5rem transparent;
+    border-right: solid 0.5rem transparent;
+}
+
+.mTown_places>span:nth-child(2)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    left:2.43rem;
+    top: 1.5rem;
+    width: 0.5rem;
+    height: 1rem;
+    background: #f3f3f3;
+}
+
+.mTown_places>span:nth-child(2)>span:nth-child(1)>span:nth-child(3){
+    display: block;
+    position: absolute;
+    left:1.15rem;
+    top: 0.8rem;
+    border-bottom: solid 0.8rem #f3f3f3;
+    border-left: solid 0.4rem transparent;
+    border-right: solid 0.4rem transparent;
+}
+
+.mTown_places>span:nth-child(2)>span:nth-child(1)>span:nth-child(4){
+    display: block;
+    position: absolute;
+    left:1.35rem;
+    top: 1.6rem;
+    width: 0.4rem;
+    height: 0.8rem;
+    background: #f3f3f3;
+}
+/*home logo finished*/
+
+/*rest logos finished*/
+
+/*places logos finished*/

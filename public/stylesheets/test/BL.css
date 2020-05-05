@@ -1,0 +1,43 @@
+.partial{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.test_canvas{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+
+}
+
+.large_box{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: solid 2px red;
+}
+
+.small_box{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 200px;
+    border: solid 2px red;
+}
+
+h1:nth-child(1):before{
+    content: "<div style='background:blue'>BBB</div>";
+}
+
+.lockAndKey{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+}

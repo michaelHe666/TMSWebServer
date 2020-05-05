@@ -1,0 +1,41 @@
+.partials_card{
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 #ebebeb;
+    border-radius: 10px;
+}
+
+.partials_card_title{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    height: 30px;
+    text-align: center;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.partials_card_options{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    height: 30px;
+    text-align: center;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    background: #c5dfb6;
+    box-shadow: 0 0 2px 0 #e5ffd4;
+}
+
+.partials_card_box{
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    width: 350px;
+    height: 100px;
+}

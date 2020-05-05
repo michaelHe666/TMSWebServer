@@ -1,0 +1,63 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar{
+    height: 1rem;
+    width: 1rem;
+    /*border-radius: 0.2rem;*/
+}
+
+body::-webkit-scrollbar-track{
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 0.5rem;
+}
+
+.partials_functionBalls_messagesBall_ball{
+    right: 10rem;
+    top: 10rem;
+    font-size: 1rem;
+}
+
+.mTown_logo{
+    display: block;
+    position: relative;
+    width: 20rem;
+    height: 60rem;
+}
+
+.mTown_bbs{
+    display: flex;
+    position: relative;
+    width: 60rem;
+    height: 100%;
+}
+
+.mTown_time{
+    display: flex;
+    position: relative;
+    width: 45rem;
+    height: 100%;
+}
+
+.mTown_places {
+    display: flex;
+    position:relative;
+    height: 100%;
+    width: 30rem;
+}

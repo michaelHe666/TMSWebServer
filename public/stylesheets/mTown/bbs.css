@@ -1,0 +1,28 @@
+.mTown_bbs{
+    background: #cbb2ad;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mTown_bbs_header{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 5rem;
+    font-family: "Century Gothic",sans-serif;
+    font-size: 4rem;
+    color:  #f3f3f3;
+    line-height: 5rem;
+}
+
+.mTown_bbs_body{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 60rem;
+    font-family: "Century Gothic",sans-serif;
+    font-size: 2rem;
+    color:  #f3f3f3;
+    line-height: 3rem;
+}

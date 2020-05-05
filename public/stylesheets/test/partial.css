@@ -1,0 +1,10 @@
+.partial_title{
+    color: white;
+    background: #c5dfb6;
+    box-shadow: 0 0 2px 0 #e5ffd4;
+}
+
+.partial_box{
+    background: #e5ffd4;
+    box-shadow: 0 0 2px 0 #e5ffd4;
+}

@@ -1,0 +1,83 @@
+.footer{
+    background: #ffffff;
+    border-radius: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-shadow: 0 0 1rem 0 #e7e7e7;
+}
+
+.footer>span:nth-child(1){
+    display: block;
+    position: relative;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-family: "Century Gothic",sans-serif;
+    font-size: 1.4rem;
+    color: #555555;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.footer>span:nth-child(1):hover{
+    color: #d1ca56;
+    transition: color 300ms ease;
+}
+
+.footer>span:nth-child(2){
+    display: flex;
+    position: relative;
+    background: #f3f3f3;
+    height: 4rem;
+    width: 18rem;
+    border-radius: 1.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer>span:nth-child(2)>span{
+    display: block;
+    position: relative;
+    height: 3rem;
+    width: 8rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #555555;
+    cursor: pointer;
+}
+
+.footer>span:nth-child(2)>span:hover{
+    background: #727272;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: background-color 300ms ease,color 300ms ease,font-size 300ms ease;
+}
+
+.footer>span:nth-child(3){
+    display: none;
+    position: relative;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    color: #555555;
+    cursor: pointer;
+}
+
+.footer>span:nth-child(3):hover{
+    background: #727272;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: background-color 300ms ease,color 300ms ease,font-size 300ms ease;
+}

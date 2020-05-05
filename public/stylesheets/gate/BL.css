@@ -1,0 +1,49 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    overflow: auto;
+    min-height: 450px;
+}
+
+body::-webkit-scrollbar{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.27);
+    border-radius: 0.3rem;
+}
+
+body::-webkit-scrollbar-corner{
+    display: none;
+}
+
+.lock{
+    position: relative;
+    top:-5%;
+    width: 50rem;
+    height: 35rem;
+    min-height: 280px;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    height: 5rem;
+    min-width: 480px;
+}

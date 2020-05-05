@@ -1,0 +1,48 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    display: block;
+    position: relative;
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+body::-webkit-scrollbar{
+    height: 1rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.27);
+    border-radius: 0.5rem;
+}
+
+.user{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    z-index: 1;
+}
+
+.userButton{
+    display: inline-block;
+    position: relative;
+    height: 12rem;
+    width: 4rem;
+    background: none;
+    z-index: 1;
+}
+
+.main{
+    display: inline-block;
+    position: absolute;
+    vertical-align: top;
+    right: 0;
+    z-index: 0;
+}

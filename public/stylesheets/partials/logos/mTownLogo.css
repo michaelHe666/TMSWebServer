@@ -1,0 +1,118 @@
+/*1em=10px*/
+
+.partials_logos_mTown_border{
+    display: block;
+    position: absolute;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+    border: solid 0.2rem #f3f3f3;
+    background: none;
+    font-size: 1em;
+    overflow: hidden;
+    color: #a8a791;
+    cursor: pointer;
+}
+
+.partials_logos_mTown_border:hover{
+    animation:partials_logos_mTown_breath 2000ms ease-in-out infinite alternate;
+}
+
+@keyframes partials_logos_mTown_breath {
+    0%{
+        color: #a8a791;
+    }
+    100%{
+        color: #e5e4c6;
+    }
+}
+
+/*middle man*/
+.partials_logos_mTown_border>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: 5.8em;
+    top: 3em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+
+.partials_logos_mTown_border>span:nth-child(2){
+    display: block;
+    position: absolute;
+    left: 5.8em;
+    top: 3em;
+    height: 0;
+    width: 0;
+    border-bottom: solid 8em #f3f3f3;
+    border-left: solid 2em transparent;
+    border-right: solid 2em transparent;
+}
+/*middle man finished*/
+
+/*left man*/
+.partials_logos_mTown_border>span:nth-child(3){
+    display: block;
+    position: absolute;
+    left: 2.8em;
+    top: 4.2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+
+.partials_logos_mTown_border>span:nth-child(4){
+    display: block;
+    position: absolute;
+    left: 2.8em;
+    top: 4.2em;
+    height: 0;
+    width: 0;
+    border-bottom: solid 6em #f3f3f3;
+    border-left: solid 1.5em transparent;
+    border-right: solid 1.5em transparent;
+}
+/*left man finished*/
+
+/*right man*/
+.partials_logos_mTown_border>span:nth-child(5){
+    display: block;
+    position: absolute;
+    left: 9.8em;
+    top: 4.2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+
+.partials_logos_mTown_border>span:nth-child(6){
+    display: block;
+    position: absolute;
+    left: 9.8em;
+    top: 4.2em;
+    height: 0;
+    width: 0;
+    border-bottom: solid 6em #f3f3f3;
+    border-left: solid 1.5em transparent;
+    border-right: solid 1.5em transparent;
+}
+/*right man finished*/
+
+/*the wall*/
+.partials_logos_mTown_border>span:nth-child(7){
+    display: block;
+    position: absolute;
+    top: 4.5em;
+    height: 2em;
+    width: 100%;
+    background: #f3f3f3;
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+    font-family: "Century Gothic",sans-serif;
+}
+/*thw wall finished*/

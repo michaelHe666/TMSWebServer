@@ -1,0 +1,52 @@
+/*Please make sure you announce position,width and height of card in your instance*/
+/*1em = 10 px*/
+
+.myClass_card{
+    display: block;
+    background: #ffffff;
+    border-radius: 1em;
+    padding: 3em;
+}
+
+.myClass_card>.myClass_card_title{
+    display: block;
+    float: left;
+    height: 1.5em;
+    text-align: center;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 2em;
+    color: white;
+    line-height: 1.5em;
+    text-indent: 1em;
+    cursor:pointer;
+}
+
+.myClass_card>.myClass_card_title span:first-child{
+    position: relative;
+    left: -0.5em;
+}
+
+.myClass_card>.myClass_card_options{
+    display: block;
+    float: right;
+}
+
+.myClass_card>.myClass_card_options>.universe_card_options_button{
+    display: inline-block;
+    float: right;
+    height: 1.5em;
+    text-align: center;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 2em;
+    color: white;
+    line-height: 1.5em;
+    cursor:pointer;
+}
+
+.myClass_card>.myClass_card_box{
+    display: block;
+    position: absolute;
+    top: 8em;
+    width: calc(100% - 6em);
+    height: calc(100% - 11em);
+}

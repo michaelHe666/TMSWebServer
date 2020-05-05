@@ -1,0 +1,39 @@
+.partials_functionBalls_messagesBall_ball>span{
+    display: block;
+    position: relative;
+    width: 5em;
+    height: 3em;
+    border: solid 0.2em #808080;
+}
+
+.partials_functionBalls_messagesBall_ball>span:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0.6em;
+    left: -0.2em;
+    width: 0;
+    height: 0;
+    border-top: solid 1.1em #808080;
+    border-left: solid 2.5em transparent;
+    border-right: solid 2.5em transparent;
+}
+
+.partials_functionBalls_messagesBall_ball>span:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    width: 0;
+    height: 0;
+    border-top: solid 1em #ededed;
+    border-left: solid 2.3em transparent;
+    border-right: solid 2.3em transparent;
+}
+
+.partials_functionBalls_messagesBall_interface_lists{
+    position: relative;
+    width: 30em;
+    height: 60em;
+    background: grey;
+}

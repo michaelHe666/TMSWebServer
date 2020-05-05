@@ -1,0 +1,582 @@
+.user{
+    background: #a8a791;
+    box-shadow: 0 0 2rem 0 #a8a791;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user::-webkit-scrollbar{
+    width: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.user::-webkit-scrollbar-track{
+    background: none;
+}
+
+.user::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 0.4rem;
+}
+
+.user>div{
+    display: flex;
+    position: relative;
+    margin: 12rem auto;
+    width: 34rem;
+    height: 75rem;
+    background: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_header{
+    display: block;
+    position: relative;
+    width: 34rem;
+    height: 10rem;
+}
+
+.user_header_info{
+    display: block;
+    position: relative;
+    height: 10rem;
+    width: 34rem;
+    float: top;
+    font-size: 3rem;
+    font-family: "Century Gothic",sans-serif;
+    color: #f9f9e7;
+}
+
+.user_header_info>img{
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.2rem;
+    vertical-align: top;
+}
+
+.user_header_info>span{
+    display: inline-flex;
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    vertical-align: top;
+}
+
+.user_header_info>span>span{
+    display: block;
+    position: relative;
+    width: 18rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: ew-resize;
+}
+
+.user_header_info>span>span::-webkit-scrollbar{
+    display: none;
+}
+
+.user_header_info>span>span:last-child{
+    font-size: 2rem;
+}
+
+.user_nav{
+    display: block;
+    position: relative;
+}
+
+.user_nav>span{
+    display: block;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 30rem;
+    height: 5rem;
+    color: #f9f9e7;
+    background: #a8a791;
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.user_nav>span:hover{
+    background: #f9f9e7;
+    color: #a8a791;
+    font-size: 2.7rem;
+    transition: background-color 100ms ease,color 100ms ease,font-size 100ms ease;
+}
+
+/*Here comes the logo of nav options*/
+
+/*logo for user center*/
+/*logo for user center*/
+
+.user_nav>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    background: #f9f9e7;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1):hover{
+    background: #a8a791;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    float: right;
+    width: 30rem;
+    height: 5rem;
+    text-indent: 8rem;
+    line-height: 5rem;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(2):hover{
+    color: #f9f9e7;
+    transition: color 100ms ease;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    top: 1rem;
+    border-bottom: solid 2rem #f9f9e7;
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1):hover{
+    border-bottom-color: #a8a791;
+    transition: border-bottom-color 100ms ease;
+}
+
+.user_nav>span:nth-child(1)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: -4rem;
+    top: -2rem;
+    width: 30rem;
+    height: 5rem;
+    visibility: visible;
+}
+
+/*logo for security*/
+/*logo for security*/
+
+.user_nav>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    background: #f9f9e7;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1):hover{
+    background: #a8a791;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    text-indent: 8rem;
+    line-height: 5rem;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    height: 3rem;
+    width: 2.6rem;
+    top: 1rem;
+    left: 2.7rem;
+    border-radius: 1.3rem 1.3rem 1.3rem 1.3rem / 0.3rem 0.3rem 1.5rem 1.5rem;
+    background-color: inherit;
+    color: #a8a791;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1)>span:nth-child(2):hover{
+    color: #f9f9e7;
+    transition: color 100ms ease;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    color: inherit;
+    left: 0.4rem;
+    top: -0.3rem;
+    font-size: 2.4rem;
+}
+
+.user_nav>span:nth-child(2)>span:nth-child(1)>span:nth-child(2)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -2.7rem;
+    height: 5rem;
+    width: 30rem;
+}
+
+/*logo for views*/
+/*logo for views*/
+
+.user_nav>span:nth-child(3)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    background: #f9f9e7;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1):hover{
+    background: #a8a791;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    text-indent: 8rem;
+    line-height: 5rem;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    left: 2.2rem;
+    width: 3.4rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    background: #a8a791;
+    visibility: hidden;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1):hover{
+    background: #f9f9e7;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    top: 0.1rem;
+    left: 1.0rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(3)>span:nth-child(1)>span:nth-child(2)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    top: -1.6rem;
+    left: -2.2rem;
+    height: 5rem;
+    width: 30rem;
+    visibility: visible;
+}
+
+/*logo for cloud settings*/
+/*logo for cloud settings*/
+
+.user_nav>span:nth-child(4)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    background: #f9f9e7;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1):hover{
+    background: #a8a791;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1)>span:nth-child(1){
+    display: inline-block;
+    position: absolute;
+    top: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background: inherit;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1){
+    display: inline-block;
+    position: absolute;
+    top: 1.7rem;
+    left: 0.4rem;
+    height: 1.2rem;
+    width: 3.2rem;
+    border-radius: 0.6rem;
+    background-color: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1)>span:nth-child(1)>span:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    top: 0.9rem;
+    left: 1.5rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    background: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1)>span:nth-child(1)>span:nth-child(3){
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    top: 1.3rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: inherit;
+    visibility: visible;
+}
+
+.user_nav>span:nth-child(4)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-indent: 8rem;
+    visibility: visible;
+}
+
+/*logo for local configs*/
+/*logo for local configs*/
+
+.user_nav>span:nth-child(5)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    background: #f9f9e7;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1):hover{
+    background: #a8a791;
+    transition: background-color 100ms ease;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1)>span:nth-child(1){
+    display: inline-block;
+    position: absolute;
+    top: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background: inherit;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.5rem;
+    height: 1.6rem;
+    width: 3rem;
+    background-color: inherit;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    visibility: visible;
+    position: absolute;
+    left: 1.9rem;
+    top: 2rem;
+    height: 1.4rem;
+    width: 0.2rem;
+    background-color: inherit;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1)>span:nth-child(1)>span:nth-child(3){
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 3.2rem;
+    left: 1.5rem;
+    height: 0.2rem;
+    width: 1rem;
+    background-color: inherit;
+}
+
+.user_nav>span:nth-child(5)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-indent: 8rem;
+    visibility: visible;
+}
+
+/*logo for helper*/
+/*logo for helper*/
+
+.user_nav>span:nth-child(6)>span:nth-child(1){
+    display: flex;
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user_nav>span:nth-child(6)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.user_nav>span:nth-child(6)>span:nth-child(1)>span:nth-child(2){
+    display: block;
+    position: relative;
+}
+
+/*logos finished*/
+
+.user_logOut{
+    display: block;
+    position: relative;
+    width: 17rem;
+    height: 4rem;
+    align-self: flex-start;
+    color: #d9d9ca;
+    font-size: 2.5rem;
+    font-family: "Comic Sans MS",sans-serif;
+}
+
+.user_logOut:hover{
+    color: #f9f9e7;
+    transition: background-color 100ms ease,color 100ms ease;
+}
+
+/*logo for log out*/
+/*logo for log out*/
+
+.user_logOut>span:nth-child(1){
+    display: block;
+    position: absolute;
+    line-height: 4rem;
+    vertical-align: top;
+    left: 8rem;
+}
+
+.user_logOut>span:nth-child(2){
+    display: block;
+    position: absolute;
+    border-color: #d9d9ca;
+}
+
+.user_logOut>span:nth-child(2):hover{
+    border-color: #f9f9e7;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-bottom: 0.2rem solid;
+    border-bottom-color: inherit;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    left: 0.5rem;
+    height: 4rem;
+    width: 2.5rem;
+    border-top: 0.2rem solid;
+    border-top-color: inherit;
+    border-left: 0.2rem solid;
+    border-left-color: inherit;
+    border-right: 0.2rem solid;
+    border-right-color: inherit;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position: absolute;
+    top: -0.2rem;
+    left: -0.2rem;
+    height: 4rem;
+    border-left: 2.6rem solid;
+    border-left-color: inherit;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1):hover{
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    border-left: 1.5rem solid;
+    border-left-color: inherit;
+    transition: border-left-width 100ms linear,border-bottom-color 100ms linear,border-top-color 100ms linear,border-top-width 100ms linear,border-bottom-width 100ms linear;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1){
+    display: block;
+    position:absolute;
+    left: -5.1rem;
+    width: 17rem;
+    height: 4rem;
+}
+
+.user_logOut>span:nth-child(2)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1)>span:nth-child(1):hover{
+    left: -4rem;
+    top: -0.5rem;
+    transition: top 100ms linear,left 100ms linear;
+}

@@ -1,0 +1,13 @@
+.mTree{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.mTree_title{
+    background: #a0cdb4;
+}
+
+.mTree_box{
+    background: #ceffe6;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/commonStyle.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/layouts/privateLayout/BL.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/layouts/privateLayout/user.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/layouts/privateLayout/userButton.css">
+    {{{block 'CSSFiles'}}}
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://localhost:3000/javascripts/layouts/privateLayout/BL.js"></script>
+    <script src="http://localhost:3000/javascripts/layouts/privateLayout/user.js"></script>
+    <script src="http://localhost:3000/javascripts/layouts/privateLayout/userButton.js"></script>
+    {{{block 'JSFiles'}}}
+</head>
+<body oncontextmenu = "return false" onselectstart="return false" >
+<div class="user">
+    <div>
+        <div class="user_header">
+            <span class="user_header_info">
+                <img  src="http://localhost:3000/ppx.jpg" alt="Head image load error!"><span><span>{{username}}</span><span id="pps">MichaelLength@163.com</span></span>
+            </span>
+        </div>
+        <div class="user_nav">
+            <span><span><span>My Identity</span><span><span><span></span><!--<span></span>--></span></span></span></span>
+            <span><span><span>Security</span><span><span>S</span><span></span></span></span></span>
+            <span><span><span>Views</span><span><span><span></span><span></span></span></span></span></span>
+            <span><span><span><span></span><span></span><span></span></span><span>Cloud Settings</span></span></span>
+            <span><span><span><span></span><span></span><span></span></span><span>Local Configs</span></span></span>
+            <span><span><span>?</span><span>Helper</span></span></span>
+        </div>
+        <div class="user_logOut">
+            <span>Log out</span><span><span><span><span><span></span></span></span></span></span>
+        </div>
+    </div>
+</div><!--space cancel
+--><div class="userButton"><span></span><span><span></span><span></span></span></div>
+<div class="main">
+    {{{body}}}
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC -//W3C//DTD XHTML 1.0 Transitional//EN
+        http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>
+<html xmlns:ownhtml>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ownhtml\:customdiv{
+            font-size: .36rem;
+            font-weight: bold;
+            color:red;
+        }
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<!--
+通过指定html命名空间的名字来定义自定义标签；默认的一些标签p div等都在html默认的命名空间下。而自定义的标签可以放在自定义的命名空间下，可通过xmlns:命名空间名 来指定，而自定义标签需要带命名空间名，而在设置样式的时候使用 " 命名空间名\:标签名  "
+-->
+<ownhtml:customdiv class="custom">this is a custom element!</ownhtml:customdiv>
+
+<p>this is normal text</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{{#extend 'headfiles'}}
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/commonStyle.css">-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/partials/cards/card.css">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/home/user.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/home/BL.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/home/starts.css">-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--<script src="javascripts/home/live2dMessage.js"></script>-->
+    <!--<script src="javascripts/gate/lock.js"></script>-->
+{{/extend}}
+
+<div class='partials_card {{>cardClassName}}' draggable="true">
+    <div class='partials_card_title {{>titleClassName}}'>{{>title}}</div>
+    <div class='partials_card_options {{>optionsClassName}}'>{{>optionsContent}}</div>
+    <div class='partials_card_box {{>boxClassName}}'>{{>boxContext}}</div>
+</div>

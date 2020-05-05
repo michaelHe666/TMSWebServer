@@ -1,0 +1,37 @@
+{{#extend 'CSSFiles'}}
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mTown/home/BL.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mTown/home/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mTown/home/body.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/myClass/card.css">
+{{/extend}}
+{{#extend 'JSFiles'}}
+    <script src="/javascripts/mTown/home/BL.js"></script>
+    <script src="/javascripts/mTown/home/header.js"></script>
+    <script src="/javascripts/mTown/home/body.js"></script>
+    <script src="javascripts/myClass/card.js"></script>
+{{/extend}}
+<div class="home">
+    <div class="home_header">
+        <span><!--2000/1/1   ErrorDay--></span><span><!--00:00--></span><span><span><!--here shows weather icons--></span><span>rainy</span></span><span><span>Location:</span><span>Mars</span></span>
+    </div>
+    <div class="home_body">
+        <div class="home_body_nav"><span><span> mForests </span><span>mClubs</span><span>mPub</span></span></div>
+        <div class="home_body_content">
+            <div class="home_body_content_mForests">
+                <div class="home_body_content_mForests_private">
+                    <div><canvas></canvas></div>
+                    <div>
+                        <span>Michael's Forest</span>
+                        <span>Node Number:1000</span>
+                        <span>Using Time:1year 1month</span>
+                    </div>
+                </div>
+                <div class="home_body_content_mForests_public">
+                    <div class="home_body_content_mForests_public_header"></div>
+                </div>
+            </div>
+            <div class="home_body_content_mClubs"></div>
+            <div class="home_body_content_mPub"></div>
+        </div>
+    </div>
+</div>

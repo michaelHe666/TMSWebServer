@@ -1,0 +1,13 @@
+.bbs{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.bbs_title{
+    background: #a5aecd;
+}
+
+.bbs_box{
+    background: #d6e1ff;
+}

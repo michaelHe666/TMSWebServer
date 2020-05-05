@@ -1,0 +1,16 @@
+/*this follows card standard which use 1em =10px*/
+
+.michael{
+    display: block;
+    position: relative;
+    height: 25em;
+    width: 50em;
+}
+
+.michael_title,.michael_options_button{
+    background: #b4ceb4;
+}
+
+.michael_box{
+    background: #dfffdf;
+}

@@ -1,0 +1,32 @@
+.mTown_logo{
+    background-color: #a8a791;
+    font-size: 1rem;
+    box-shadow: 0 0 1rem 0 #a8a791;
+}
+
+.mTown_logo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    border-top:solid 8rem #a8a791;
+    border-left: solid 10rem transparent;
+    border-right: solid 10rem transparent;
+    filter: drop-shadow(0 0 0.5rem #a8a791);
+}
+
+/*.mTown_logo::after{*/
+    /*content: '';*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 100%;*/
+    /*border-top:solid 8rem black;*/
+    /*border-left: solid 10rem transparent;*/
+    /*border-right: solid 10rem transparent;*/
+    /*z-index: -1;*/
+/*}*/
+
+.mTown_logo>span{
+    left: 2rem;
+    top: 45rem;
+}
